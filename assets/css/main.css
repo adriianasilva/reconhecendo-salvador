@@ -6,7 +6,7 @@ body{
   }
   
   img{
-    max-width: 9%;
+    max-width: 5%;
     margin-right: 2%;
   }
   
@@ -25,14 +25,9 @@ body{
     z-index: 10;
     width: 100%;
     height: 20px;
-   
   }
-  #categorias .link{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
+  iframe{
+  box-align: center;
   }
    @media (min-width: 400px){
      h1{
@@ -52,9 +47,6 @@ body{
        font-family: 'Open Sans Condensed', sans-serif;
      }
     }
-  form{
-    display:flex;
-  }
   h4{
     font-size: 55px;
     font-family: 'Amatic SC', cursive;
