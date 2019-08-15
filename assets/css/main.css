@@ -19,13 +19,20 @@ body{
     text-align: center;
     background-color: violet;
   }
-  #nav-bar2{
+  .nav-bar2{
     position: fixed;
     margin-top:27px;;    
     z-index: 10;
     width: 100%;
     height: 20px;
    
+  }
+  #categorias .link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
   }
    @media (min-width: 400px){
      h1{
