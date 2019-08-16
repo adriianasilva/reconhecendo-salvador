@@ -8,6 +8,7 @@ body {
 .site-content {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
+  padding-top: 256px;
 }
 
 .container img {
@@ -55,7 +56,7 @@ body {
 }
 
 #spotify-playlist {
-  
+
 }
 
 @media (min-width: 400px){
@@ -83,4 +84,20 @@ h4 {
   font-family: 'Amatic SC', cursive;
   color:  	#630041;
   text-align: center;
+}
+
+@media screen and (max-width: 600px){
+
+  .site-content{
+    padding-top: 480px;
+  }
+  
+}
+
+@media screen and (max-width: 992px){
+
+  .site-content{
+    padding-top: 480px;
+  }
+  
 }
