@@ -7,6 +7,8 @@ body {
 
 .site-content {
   margin-top: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
 }
 
 .container img {
@@ -34,23 +36,28 @@ header {
 
 .sub-navbar {
   margin-top: 16px;
+  background-color: violet;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #navbar1 {
   margin-top: 16px;
+  background-color: violet;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
 }
 
 #navbar2 {
   margin-bottom: 32px;
+  background-color: violet;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
 }
 
 #vazio1 {
   height: 128px;
 }
 
-iframe {
-  box-align: center;
-}
 
 @media (min-width: 400px){
   h1 {
