@@ -10,8 +10,9 @@
     </head>
     
     <body>
-        <header id="header" class="navbar navbar-default navbar-static-top col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <a href="https://meninas-ciencias-dados.github.io/"><img id="header-img" class="col-md-3" src="assets/imgs/logo_mcd.png"></a>
+        <nav id="header" class="navbar navbar-default navbar-static-top navbar-header col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="container">
+                <a href="https://meninas-ciencias-dados.github.io/"><img id="header-img" class="col-md-3" src="assets/imgs/logo_mcd.png"></a>
                 <nav id="navbar1" class="sub-navbar col-xs-12 col-sm-12 col-md-9 col-lg-9">
                     <a class="nav-link" href="#sobre">Sobre o projeto</a> |
                     <a class="nav-link" href="https://www.vakinha.com.br/vaquinha/auxilio-para-meninas-na-ciencia-de-dados">Apoie-nos</a> |
@@ -19,7 +20,7 @@
                     <a class="nav-link" href="#redes">Redes Sociais</a> |
                     <a class="nav-link" href="#media">Músicas e Vídeos</a>
                 </nav>
-
+    
                 <div class="hidden-xs col-sm-3 col-md-3 col-lg-3">
                     <!-- espaço vazio pra assentar a logo-->
                 </div>
@@ -35,30 +36,68 @@
                     <a class="nav-link" href="#local">População</a>
                     </div>
                 </nav>
-            </header>
+            </div>
+        </nav>
 
         <!-- espaço vazio quando a tela for pequena: aumentar margin-top -->
         <!--div id="vazio1" class="col-xs-12 col-sm-12 hidden-md hidden-lg">
         </div-->
 
         <div class="site-content container center-block text-center">
-            <h1> (Re)Conhecendo Salvador </h1>
-            <h4 id="sobre">Sobre o Projeto</h4>
+            <div id="home-big" class="jumbotron">
+                <h1> (Re)Conhecendo Salvador </h1>
+            </div>
 
-            <h4 id="escolas">Escolas</h4>
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h2 id="sobre">Sobre o Projeto</h4>
+                    <p>
+                        Lorem Ipsum
+                    </p>
+                    <h4 id="escolas">Escolas</h4>
+                    <p>
+                        Lorem Ipsum
+                    </p>
+                </div>
+    
+                
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h2 id="redes">Redes Sociais</h4>
+                        <span>
+                            <img src="assets/svgs/145802.svg">
+                            /meninas-ciencias-dados
+                        </span>
+                        <br>
+                        <span>
+                            <img src="assets/svgs/174855.svg">
+                            /meninas
+                        </span>
+                        <br>
+                        <span>
+                            <img src="assets/svgs/174883.svg">
+                            /memes
+                        </span>
+                </div>
         
-            <h4 id="redes">Redes Sociais</h4>
-                <span>
-                   <img src="https://image.flaticon.com/icons/svg/145/145802.svg" id="body-img">
-                    <img src="https://image.flaticon.com/icons/svg/174/174855.svg" id="body-img">
-                    <img src="https://image.flaticon.com/icons/svg/174/174883.svg" id="body-img">
-                </span>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <h2 id="media">Músicas e Vídeos</h4>
+                        <span>
+                            <h4><img src="assets/svgs/148744.svg">Playlist do Projeto!</h4>
+                        </span>
+                        <div class="" id="nao_use_classe">
+                            <div id="spotify-playlist">
+                                <iframe src="https://open.spotify.com/embed/playlist/0sbbRFmrFX3pfVsmPeFEDH" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            </div>
+                            <video id="video" src="video/demo.mp4"></video>
+                        </div>
+                </div>
+
+            </div>
             
-            <h4 id="media">Músicas e Vídeos</h4>
-            <img src="https://image.flaticon.com/icons/svg/148/148744.svg" id="body-img"> <h4>Playlist do Projeto!</h4>
-            <iframe src="https://open.spotify.com/embed/playlist/0sbbRFmrFX3pfVsmPeFEDH" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <video id="video" src="video/demo.mp4"></video>
             
+            <!-- fim do container -->
+
         </div>
 
         <div class="footer">

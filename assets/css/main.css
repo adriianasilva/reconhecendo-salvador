@@ -2,11 +2,10 @@ body {
     background-color: aliceblue;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size:30px;
-    margin-top: 7%;
+    /*margin-top: 7%;*/
 }
 
 .site-content {
-  margin-top: 0px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
 }
@@ -50,6 +49,14 @@ body {
   height: 128px;
 }
 
+.home-big {
+  /*margin-top: 16px;
+  position: relative;*/
+}
+
+#spotify-playlist {
+  
+}
 
 @media (min-width: 400px){
   h1 {
