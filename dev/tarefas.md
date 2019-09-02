@@ -1,52 +1,51 @@
 #HOMEPAGE
 
-##navbar
+##navbar []
 
-	[]>- Inserir carousel com fotos das alunas dividido por temas e por ultimo apoie-nos
+	 - Inserir carousel com fotos das alunas dividido por temas e por ultimo apoie-nos
 
-	[]>- na esquerda um pouco abaixo do carousel logo do reconhecendo salvador direcionando pra home
+	 - na esquerda um pouco abaixo do carousel logo do reconhecendo salvador direcionando pra home
 
-	[]>- navbar com as areas "educação saude...." em quadradinhos
+	- navbar com as areas "educação saude...." em quadradinhos
 
 ##conteúdo
-- menu lateral informativo oculto. alinhado à esquerda.
-![https://2ammedia.co.uk/](modelo daqui)
+- menu lateral informativo oculto. alinhado à esquerda. ![https://2ammedia.co.uk/] (modelo daqui)
 
-  []>-conteudo do menu informativo: 
+  -conteudo do menu informativo: 
 	
-		[]>-Equipe; 
+		-Equipe; 
 		
-		[]>-Notícias;
+		-Notícias;
   
-  >-ao lado icones das redes sociais direcionando pras redes (facebook, instagram, twitter, youtube) 
+  -ao lado icones das redes sociais direcionando pras redes (facebook, instagram, twitter, youtube) 
 
-		>-email 
-		>-icone do play q direciona pra playlist
+		-email 
+		-icone do play q direciona pra playlist
   
   
 - menu lateral estático do lado direito com links
-			[]>- Meninas //direciona para sobre o projeto
+			- Meninas //direciona para sobre o projeto
 
-			[]>- Redesenhando // direciona para a pagina com os desenhos do concurso "redesenhando salvador"
+			- Redesenhando // direciona para a pagina com os desenhos do concurso "redesenhando salvador"
 
-			[]>- Histórias // videos das meninas ao longo do percurso no yt + possivel podcast
+			- Histórias // videos das meninas ao longo do percurso no yt + possivel podcast
 
-			[]>- Científicas //direciona para os projetos de ciencias
+			- Científicas //direciona para os projetos de ciencias
 
 > nao decidimos o que colocar no conteudo da pagina inicial, sugestao de ter a logo da pagina 
 
 ##footer
-[]>- fundo PNG transparente
+- fundo PNG transparente
 
-	[]>-apoie-nos alinhados ao centro
+	-apoie-nos alinhados ao centro
   
 	abaixo, um ao lado do outro
-		[]>- termos de utilização  
+		- termos de utilização  
 
-		[]>-ficha técnica
+		-ficha técnica
 
-		[]>-copyright
+		-copyright
 
-		[]>-img logo gamma //direcionando para os sites
-		[]>-img logo cnpq
-		[]>-img logo pei
+		-img logo gamma //direcionando para os sites
+		-img logo cnpq
+		-img logo pei
