@@ -1,12 +1,12 @@
 #HOMEPAGE
 
-##navbar []
+##navbar 
 
-	 - Inserir carousel com fotos das alunas dividido por temas e por ultimo apoie-nos
+	> - Inserir carousel com fotos das alunas dividido por temas e por ultimo apoie-nos
 
-	 - na esquerda um pouco abaixo do carousel logo do reconhecendo salvador direcionando pra home
+	> - na esquerda um pouco abaixo do carousel logo do reconhecendo salvador direcionando pra home
 
-	- navbar com as areas "educação saude...." em quadradinhos
+	> - navbar com as areas "educação saude...." em quadradinhos
 
 ##conteúdo
 - menu lateral informativo oculto. alinhado à esquerda. ![https://2ammedia.co.uk/] (modelo daqui)
