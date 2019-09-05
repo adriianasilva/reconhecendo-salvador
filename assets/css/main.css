@@ -112,24 +112,32 @@ p,li {
 
 /* configurações de acordo com a tela */
 
-/*
-@media screen and (min-width: 128px) and (max-width: 400px){
+/* 
+  usar essa regra para forçar aparição de um espaço em branco
+  para o backgrounda homepage
+*/
+
+@media screen and (min-width: 128px) and (max-width: 400px){ /*(max-width: 400px){*/
 
   .site-content{
-    padding-top:    512px;
-    padding-bottom: 128px;
+    padding-top:    32px;
+    padding-bottom: 256px;
   }
   
 }
+
+
 
 @media screen and (min-width: 401px) and (max-width: 767px){
 
   .site-content{
-    padding-top:    400px;
-    padding-bottom: 200px;
+    padding-top:    32px;
+    padding-bottom: 512px;
   }
   
 }
+
+/*
 
 @media screen and (min-width: 768px) and (max-width: 992px){
 
@@ -158,5 +166,14 @@ p,li {
   /* width:  100%;*/
   background-position: bottom; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 100vw; /* Resize the background image to cover the entire container */
+  background-size: 100vh; /* Resize the background image to cover the entire container */
+}
+
+@media screen and (max-width: 993px) {
+
+  #site-content{
+    background-position: left bottom;
+    background-size: 90vw;
+  }
+  
 }
