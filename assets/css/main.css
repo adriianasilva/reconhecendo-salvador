@@ -8,8 +8,8 @@ body {
 .site-content {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
-  padding-top: 256px;
-  padding-bottom: 256px;
+  padding-top: 16px; /*256px;*/
+  padding-bottom: 16px; /*256px;*/
 }
 
 .container img {
@@ -112,10 +112,11 @@ p,li {
 
 /* configurações de acordo com a tela */
 
+/*
 @media screen and (min-width: 128px) and (max-width: 400px){
 
   .site-content{
-    padding-top:    512px;  /* valor esquisito, né? mas a navbar fica gigante */
+    padding-top:    512px;
     padding-bottom: 128px;
   }
   
@@ -147,3 +148,5 @@ p,li {
   }
   
 }
+
+*/
