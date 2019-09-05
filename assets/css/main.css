@@ -150,3 +150,13 @@ p,li {
 }
 
 */
+
+#site-content {
+  background-image: url('../imgs/backgroundinicio-lq.png');
+  /* background-color: #cccccc; /* Used if the image is unavailable */
+  /* height: 70%; /* You must set a specified height */
+  /* width:  100%;*/
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 100vw; /* Resize the background image to cover the entire container */
+}
