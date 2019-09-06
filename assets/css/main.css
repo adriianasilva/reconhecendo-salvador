@@ -92,12 +92,19 @@ body {
     background-repeat: no-repeat;
 }
 
-#social { /* o div com os ícones*/
-  display: block;
-}
-
 .social_icon { /* com razão 1:1 - círculos */
-  width: 256px;
+  /* width: 128px;
+  height: 128px; 
+  usar CSS Transform?
+  */
+  transform: scale(2, 2); /* 2 vezes o valor de altura e largura */
+  margin: 32px;
+  /*
+    compensar com metade do margin - já que a referencia é o primeiro pixel da imagem
+    no canto superior esquerdo
+  */
+  position: relative;
+  left: -16px;
 }
 
 .home-big {
@@ -199,11 +206,6 @@ p,li {
     padding-bottom: 512px;
   }
 
-  .social_icon {
-    width: 256px;
-    height: 256px;
-  }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -215,12 +217,6 @@ p,li {
   }
   */
   
-  .social_icon {
-    width: 256px;
-    height: 256px;
-  }
-
-
   #search_bar input {
     width: 192px;
   }
@@ -235,11 +231,6 @@ p,li {
     padding-bottom: 100px;
   }
   */
-
-  .social_icon {
-    width: 256px;
-    height: 256px;
-  }
 
   #search_bar input {
     width: 192px;
@@ -256,11 +247,6 @@ p,li {
     padding-bottom: 100px;
   }
   */
-
-  .social_icon {
-    width: 256px;
-    height: 256px;
-  }
 
   #search_bar input {
     width: 192px;
