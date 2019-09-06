@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300&amp;display=swap"
     rel="stylesheet">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,10 +30,11 @@
         </div>
       </div>
       <div class="item">
-        <a href="https://www.vakinha.com.br/vaquinha/auxilio-para-meninas-na-ciencia-de-dados" target="_blank"> <img src="assets/imgs/header2.png">
-        <div class="carousel-caption">
-          ...
-        </div>
+        <a href="https://www.vakinha.com.br/vaquinha/auxilio-para-meninas-na-ciencia-de-dados" target="_blank"> <img
+            src="assets/imgs/header2.png">
+          <div class="carousel-caption">
+            ...
+          </div>
       </div>
       ...
     </div>
@@ -61,15 +63,18 @@
       </button>
     </div>
 
+    <div id="logo_nav" class="navbar-brand hidden-xs col-sm-1 col-md-1 col-lg-1">
+      <!-- nothing -->
+      <!--img id="logo_nav" src="assets/imgs/recssa.png"-->
+    </div>
+
     <div class="container">
       <!-- Collect the nav links, forms, and other content for toggling -->
 
 
       <div class="collapse navbar-collapse" id="collapse">
-        <div class="container-fluid">
 
-          <!-- Brand and toggle get grouped for better mobile display -->
-
+        <div class="container-fluid col-xs-12 col-sm-8 col-md-6 col-lg-8">
 
           <ul class="nav navbar-nav">
             <li><a href="categorias/curiosidades.html"><b>Curiosidades</b></a></li>
@@ -84,25 +89,29 @@
             <li><a href="categorias/transportes.html"><b>Transportes</b></a></li>
             <li><a href="categorias/turismo.html"><b>Turismo</b></a></li>
           </ul>
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="O que você quer saber?">
-            </div>
-            <button type="submit" class="btn btn-default">Pesquisar</button>
-          </form>
 
+        </div><!-- /.container-fluid -->
 
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        <!-- Search bar element -->
+        <form id="search_bar" class="navbar-form navbar-left col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="O que você quer saber?">
+          </div>
+          <button type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
+        </form>
+
+      </div><!-- /.navbar-collapse -->
   </nav>
 
   <!-- espaço vazio quando a tela for pequena: aumentar margin-top -->
   <!--div id="vazio1" class="col-xs-12 col-sm-12 hidden-md hidden-lg">
         </div-->
-  <img id="logo" src="assets/imgs/recssa.png">
+  <div class="container text-center hidden-lg hidden-md hidden-sm">
+    <img id="logo" src="assets/imgs/recssa.png">
+  </div>
 
   <div id="site-content" class="site-content container center-block text-center">
-  
+
     <div class="row">
 
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
@@ -115,39 +124,39 @@
             todas as sextas-feiras com o objetivo de levantar dados sobre a cidade de Salvador, em diversos aspectos.
           </p>
         </div>
-        
+
         <br>
         <h2 id="escolas">Escolas Participantes:</h2>
         <br>
         <div class="text-left">
-            <ul>
-                <li>Henriqueta Martins Catharino</li>
-                <li>Evaristo da Veiga</li>
-                <li>Mário Costa Neto</li>
-                <li>Cidade de Jequié</li>
-                <li>Ypiranga</li>
-            </ul>
+          <ul>
+            <li>Henriqueta Martins Catharino</li>
+            <li>Evaristo da Veiga</li>
+            <li>Mário Costa Neto</li>
+            <li>Cidade de Jequié</li>
+            <li>Ypiranga</li>
+          </ul>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
         <h3 id="redes">Siga-nos nas nossas redes!</h3>
-        <br>
-        <div class="text-left">
-          <!-- precisa centralizar o bloco com links, mas deixar o texto alinhado à esquerda -->
-          <span>
-            <p><a href="https://facebook.com/meninasnacienciadedados"> <img id="social_media"
-                  src="assets/svgs/145802.svg"></p>
-          </span>
+        <div id="social" class="text-center">
+          <!-- precisa centralizar o bloco com links, mas deixar o texto alinhado à esquerda ? 
+          que texto?
+          
+          eu só sei que os ícones estão bugando! - usar tag <svg>?
+          https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
+          
+          no Chrome: possível bug da viewbox obtendo largura máxima de um container...
+          https://stackoverflow.com/questions/41592578/width-of-svg-isnt-correct-when-viewbox-is-defined
 
-          <span>
-            <p><a href="https://instagram.com/menina.cientista"> <img id="social_media" src="assets/svgs/174855.svg">
-            </p>
-          </span>
-
-          <span>
-            <p><a href="https://www.youtube.com/channel/UC8tL68KKv785IfA7AiKhK0w"><img id="social_media"
-                  src="assets/svgs/174883.svg"></p>
-          </span>
+          -->
+            <img class="social_icon" href="https://facebook.com/meninasnacienciadedados" 
+            src="assets/svgs/145802.svg"></img>
+            <img class="social_icon" href="https://instagram.com/menina.cientista" 
+            src="assets/svgs/174855.svg"></img>
+            <img class="social_icon" href="https://www.youtube.com/channel/UC8tL68KKv785IfA7AiKhK0w" 
+            src="assets/svgs/174883.svg"></img>
         </div>
       </div>
 
@@ -195,7 +204,7 @@
       <br>
       <div id="footer_logos" class="logos">
         <div class="row">
-         
+
           <img src="" alt="" srcset="">
         </div>
       </div>
