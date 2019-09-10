@@ -74,15 +74,21 @@ body {
   margin:  0px; /* usava margin-top: 10px; */
 }
 
-#logo { /* entendi, mas recssa.png tem razão 1012px/409px = 2.47432762836  */
-
+#logo { 
   max-width: 70%;
   max-height: 120%;
   padding: 10px 32px;
 }
+#container_navbar{
+  display: flex;
+  flex-direction: row;
+}
 
-/* lembrar de utilizar media queries na #logo */
-
+.nav_icons{
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+}
 #logo_nav
 {
     margin: 16px 16px;
@@ -93,6 +99,13 @@ body {
     height: 80px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+#nav_icons:hover span{
+  border: 1px solid f00;
+  opacity:1;
+  -moz-opacity:1;
+  filter:alpha(opacity=100);
 }
 
 .social_icon { /* com razão 1:1 - círculos */
@@ -118,7 +131,7 @@ body {
 
 #footer {
   text-align:       center;
-  background-color:  rgb(241, 230, 65);
+  background: url(../imgs/backgroundgeral.png);
   /*height:           256px;*/
 }
 
