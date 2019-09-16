@@ -4,7 +4,9 @@ body {
     font-size:30px;
     /*margin-top: 7%;*/
 }
-
+.navbar-nav{
+  z-index: -2;
+}
 .site-content {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 25px;
@@ -26,6 +28,7 @@ body {
 #header {
   text-align: center;
   background-color: rgb(241, 230, 65);
+  height: 64px;
 }
 
 #header-img {
@@ -44,7 +47,7 @@ body {
 
 /*  Caso a navbar bugue... use essas regras comentadas abaixo... */
 
-.navbar .container { /* ...e comente essa, né */
+.navbar .container { 
   margin-top:     16px;
   margin-bottom:  16px;
 }
@@ -67,7 +70,7 @@ body {
   height: 128px;
 }
 
-.carousel-inner img { /* muito genérico... isso é pro caroussel, pra logo, ou pra tudo? */
+.carousel-inner img { 
   max-width: 100%;
   max-height: 200%;
   padding: 0px;
