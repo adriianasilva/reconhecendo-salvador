@@ -215,6 +215,10 @@ p,li {
     padding-top:    32px;
     padding-bottom: 256px;
   }
+
+  #header {
+    height: auto;
+  }
   
 }
 
@@ -225,6 +229,11 @@ p,li {
   .site-content{
     padding-top:    32px;
     padding-bottom: 512px;
+  }
+
+
+  #header {
+    height: auto;
   }
 
 }
