@@ -101,37 +101,41 @@
 </div>
 
 </div>
-  <div>
+<div>
   <nav>
     <ul class="nav navbar-nav navbar-left">
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="menu" alt="Menu" src="../reconhecendo-salvador-gh-pages/assets/imgs/menu.png"></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
+          <li><a href="#">SOBRE</a></li>
+          <li><a href="#">EQUIPE</a></li>
+          <li><a href="#">NOTICIAS</a></li>
           <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
+          <li><a href="#">APOIO</a></li>
         </ul>
-        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="menu" alt="Contato" src="../reconhecendo-salvador-gh-pages/assets/imgs/contato.png"></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://facebook.com/meninasnacienciadedados"> <img class="social_icon" src="assets/imgs/145802.png"></img></a></li>
+          <li><a href="https://instagram.com/menina.cientista" ><img class="social_icon" src="assets/imgs/174855.png"></img></a></li>
+          <li><a href="https://www.youtube.com/channel/UC8tL68KKv785IfA7AiKhK0w"><img class="social_icon" src="assets/imgs/174883.png"></img></a></li>
+          <li><a href="https://twitter.com/girlsondata"><img class="social_icon" src="assets/imgs/twitter.png"></a></li>
+          <li><a href="https://meninas-ciencias-dados.github.io/"><img class="social_icon" src="assets/imgs/github-logo.png"></a></li>
+          <li><a href="mailto:meninasnacienciadedados@gmail.com"><img class="social_icon" src="assets/imgs/gmail.png"></a></li>
+        </ul>
       </li>
     </ul>
   </nav>
+  <nav>
+      <ul class="nav navbar-nav navbar-right">
+          <p><li><a href="#">MENINAS</a></li></p>
+          <p><li><a href="#">REDESENHANDO</a></li></p>
+          <p><li><a href="#">HISTORIAS</a></li></p>
+          <p><li><a href="#">CIENTÍFICAS</a></li></p>
+      </ul>
+  </nav>
   </div>
  
- <!-- Search bar element -->
- <form id="search_bar" class="navbar-form navbar-right col-xs-12 col-sm-12 col-md-7 col-lg-4 text-center">
-  <span>
-    <div class="form-group">
-      <input type="text" class="form-control text-center" placeholder="O que você quer saber?">
-    </div>
-    <button type="submit" class="btn btn-outline glyphicon glyphicon-search">
-      <span class="hidden-sm hidden-md hidden-lg">
-        Pesquisar
-      </span>
-    </button>
-  </span>
-</form>
 </div><!-- /.container-fluid -->
 </div><!-- /.navbar-collapse -->
 
@@ -142,9 +146,7 @@
     <img id="logo" src="assets/imgs/recssa.png">
   </div>
 
-  <nav>
-    
-  </nav>
+  
   <div id="site-content" class="site-content container center-block text-center">
 
     <div class="row">
@@ -164,45 +166,29 @@
         
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <h3 id="redes">Siga-nos nas nossas redes!</h3>
-        <div id="social" class="text-center">
-          <!-- precisa centralizar o bloco com links, mas deixar o texto alinhado à esquerda ? 
-          que texto?
-          
-          eu só sei que os ícones estão bugando! - usar tag <svg>?
-          https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
-          
-          no Chrome: possível bug da viewbox obtendo largura máxima de um container...
-          https://stackoverflow.com/questions/41592578/width-of-svg-isnt-correct-when-viewbox-is-defined
-
-          vamos converter os SVGs para PNGs com o svgexport no NPM
-          $ npm install svgexport -g
-          -->
-            <img class="social_icon" href="https://facebook.com/meninasnacienciadedados" 
-            src="assets/imgs/145802.png"></img>
-            <img class="social_icon" href="https://instagram.com/menina.cientista" 
-            src="assets/imgs/174855.png"></img>
-            <img class="social_icon" href="https://www.youtube.com/channel/UC8tL68KKv785IfA7AiKhK0w" 
-            src="assets/imgs/174883.png"></img>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <h2 id="media">Músicas e Vídeos</h4>
-          <div class="" id="nao_use_classe">
-            <span>
-              <h4><img class="social_icon" src="assets/imgs/148744.png">Playlist do Projeto!
-        </h2></span>
-        <div id="spotify-playlist">
-          <iframe src="https://open.spotify.com/embed/playlist/0sbbRFmrFX3pfVsmPeFEDH" width="auto" height="320"
-            frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        <div id="youtube-apresentacao">
-          <iframe width="auto" height="auto" src="https://www.youtube.com/embed/QqklZAsXPbQ" frameborder="1"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
         
+
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h2 id="media">Músicas e Vídeos</h2>
+            <div>
+              <span>
+                <h4><img src="assets/imgs/148744.png">Playlist do Projeto!
+          </h4></span>
+          <div id="spotify-playlist">
+            <iframe src="https://open.spotify.com/embed/playlist/0sbbRFmrFX3pfVsmPeFEDH" width="auto" height="320"
+              frameborder="1" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+          <img src="assets/imgs/music-and-multimedia.png">Podcast Mulheres Extraordinárias - Episódio #1
+          <div id="youtube-apresentacao">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/QqklZAsXPbQ" frameborder="1"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+        </div>
       </div>
+
+     
     </div>
 
   </div>
