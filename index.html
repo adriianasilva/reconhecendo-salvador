@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <link href="assets/css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300&amp;display=swap"
-    rel="stylesheet">
+  <!-- link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300&amp;display=swap"
+    rel="stylesheet"-->
+  <link href="https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet" type="text/css"/> 
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/normalize.css" rel="stylesheet">
 </head>
@@ -50,10 +51,16 @@
     </a>
   </div>
 
-  <nav id="header"
-    class="navbar navbar-default navbar-static-top navbar-header col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <nav id="header" class="navbar navbar-default navbar-static-top navbar-header col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-    <div class="container">
+    <div id="logo_nav" class="hidden-xs col-sm-4 col-md-4 col-lg-2"
+      onclick="window.open('https://bit.ly/reconhecendosalvador');">
+      <!-- nothing -->
+      <!-- img id="logo_nav" src="assets/imgs/recssa.png"-->
+    </div>
+
+
+    <div class="container hidden-sm hidden-md hidden-lg">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse"
         aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -63,15 +70,9 @@
       </button>
     </div>
 
-    <div id="logo_nav" class="navbar-brand hidden-xs col-sm-4 col-md-4 col-lg-2"
-      onclick="window.open('https://bit.ly/reconhecendosalvador');">
-      <!-- nothing -->
-      <!-- img id="logo_nav" src="assets/imgs/recssa.png"-->
-    </div>
 
-    <div class="container" style="display:none;" >
+    <div id="navlinks" class="container col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <!-- Collect the nav links, forms, and other content for toggling -->
-
       <div class="collapse navbar-collapse" id="collapse">
 
         <div id="container_navbar">
@@ -109,7 +110,12 @@
 
       </div>
 
+    </div>
+
+
   </nav>
+  <!-- fim do nav-->
+
   </div>
 
   </div>
@@ -119,16 +125,21 @@
   </div>
 
   </div>
+
+  <div class="container text-center hidden-lg hidden-md hidden-sm">
+    <img id="logo" src="assets/imgs/recssa.png">
+  </div>
+
   <!-- menus difíceis de posicionar -->
   <div id="menus_extras" class="col-xs-12">
-
+  <!-- para depois: adicionar animação tipo navbar-collapse -->
     <nav id="nav_extra_left" class="col-xs-6">
       <!-- pra que tantos ul e li ? -->
       <ul class="nav navbar-nav navbar-left">
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-            aria-expanded="false"><img id="menu" alt="Menu" src="assets/imgs/menu.png"></a>
+            aria-expanded="false"><img id="menu_1L" class="icone_fofo" alt="Menu" src="assets/imgs/menu.png"></a>
           <ul class="dropdown-menu">
             <li><a href="sobre.html">SOBRE</a></li>
             <li><a href="#">EQUIPE</a></li>
@@ -137,10 +148,11 @@
             <li><a href="#">APOIO</a></li>
           </ul>
         </li> <!-- tava faltando isso aqui -->
-        <br>
+
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-            aria-expanded="false"><img id="menu" alt="Contato" src="assets/imgs/contato.png"></a>
+          <a href="#" id="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false"><img id="menu_2L" class="icone_fofo" alt="Contato" src="assets/imgs/contato.png"></a>
+
           <ul class="dropdown-menu">
             <li><a href="https://facebook.com/meninasnacienciadedados"> <img class="social_icon"
                   src="assets/imgs/145802.png"></img></a></li>
@@ -161,20 +173,20 @@
 
     <nav id="nav_extra_right" class="col-xs-6">
       <!-- era .menu_conteudo -->
-        <ul class="nav navbar-nav navbar-right">
-          <p>
-            <li><a href="#">MENINAS</a></li>
-          </p>
-          <p>
-            <li><a href="#">REDESENHANDO</a></li>
-          </p>
-          <p>
-            <li><a href="#">HISTORIAS</a></li>
-          </p>
-          <p>
-            <li><a href="#">CIENTÍFICAS</a></li>
-          </p>
-        </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <p>
+          <li><a href="#">MENINAS</a></li>
+        </p>
+        <p>
+          <li><a href="#">REDESENHANDO</a></li>
+        </p>
+        <p>
+          <li><a href="#">HISTORIAS</a></li>
+        </p>
+        <p>
+          <li><a href="#">CIENTÍFICAS</a></li>
+        </p>
+      </ul>
       <!-- fim de .menu_conteudo -->
     </nav>
   </div>
@@ -186,16 +198,12 @@
   <!-- espaço vazio quando a tela for pequena: aumentar margin-top -->
   <!--div id="vazio1" class="col-xs-12 col-sm-12 hidden-md hidden-lg">
         </div-->
-  <div class="container text-center hidden-lg hidden-md hidden-sm">
-    <img id="logo" src="assets/imgs/recssa.png">
-  </div>
-
 
   <div id="site-content" class="site-content container center-block text-center">
 
     <div class="row">
 
-    
+
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 
 
