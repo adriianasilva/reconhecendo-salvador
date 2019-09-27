@@ -136,6 +136,10 @@ body {
   margin: 8px;
 }
 
+#container_navbar ul {
+  z-index: 10;
+}
+
 #logo_nav
 {
     position: relative;
