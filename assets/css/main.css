@@ -5,7 +5,9 @@ body {
   z-index: 0;
 }
 
-.navbar-nav{
+.navbar-nav {
+  padding: 0 0;
+  margin:  0 0;
   z-index: -2;
 }
 
@@ -33,7 +35,7 @@ body {
 #header {
   text-align: center;
   background-color: rgb(241, 230, 65);
-  height: 64px;
+  height: auto;
   z-index: 0;
 }
 
@@ -110,19 +112,28 @@ body {
   max-height: 120%;
   padding: 10px 32px;
 }
-#container_navbar{
-  
+
+#container_navbar{  
   display: flex;
   flex-direction: row;
+  height: auto;
+  width: 120%;
 }
-#collapse{
-  margin-top: -55px;
+
+#container_navbar ul {
+  margin: auto;
+}
+
+#collapse {
+  /* margin-top: -55px; */
   margin-bottom: 0px;
 }
-.nav_icons{
-  width: 35px;
-  height: 32px;
-  margin: 5px;
+
+.nav_icons {
+  /* podemos aumentar os icones de acordo com a vw */
+  width: 2.2vw;
+  height: 2.2vw;
+  margin: 8px;
 }
 
 #logo_nav
@@ -141,6 +152,17 @@ body {
 
 #navlinks {
   z-index: 1;
+}
+
+#nav_extra_left ul li a {
+  font-size: 24px;
+}
+
+#nav_extra_right ul li a {
+  font-size: 40px;
+  margin-bottom: 20px;
+  /* color: #8c4d89; */
+  color: #836A80;
 }
 
 #nav_icons:hover span{
@@ -261,7 +283,12 @@ p,li {
   #header {
     height: auto;
   }
-  
+
+  .nav_icons {
+    width:  32px;
+    height: 32px;
+  }
+
 }
 
 
@@ -276,6 +303,12 @@ p,li {
 
   #header {
     height: auto;
+  }
+
+
+  .nav_icons {
+    width:  32px;
+    height: 32px;
   }
 
 }
@@ -293,6 +326,23 @@ p,li {
     width: 192px;
   }
 
+  .nav_icons {
+    width:  6vh;
+    height: 6vh;
+  }
+
+  /* falta o width do #container_navbar */
+  #container_navbar {
+    margin: auto; /* alinhar ao centro */
+    padding: 0 0;
+    width: 100%;
+  }
+
+  #header {
+    height: auto;
+  }
+
+
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px){
@@ -306,6 +356,10 @@ p,li {
 
   #search_bar input {
     width: 192px;
+  }
+
+  #header {
+    height: auto;
   }
 
 
@@ -322,6 +376,10 @@ p,li {
 
   #search_bar input {
     width: 192px;
+  }
+
+  #header {
+    height: 64px;
   }
 
 
