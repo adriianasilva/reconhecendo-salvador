@@ -513,6 +513,17 @@ p,li {
 
 @media screen and (max-width: 767px) {
 
+  #sobre > div .carousel.esquerda {
+    margin-left:  0px;
+    margin-right: 0px; /* alinhar carousel com a foto da professora Karla */
+  }
+  
+  #sobre > div .carousel.direita {
+    margin-right: 0px;
+    margin-left:  0px; /* alinhar carousel com o texto, né */
+  }
+  
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
