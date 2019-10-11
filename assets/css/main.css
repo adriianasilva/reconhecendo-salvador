@@ -372,6 +372,12 @@ p,li {
     width: 100%;
   }
 
+  #carousel-example-generic {
+    height: auto;
+    object-fit: cover;
+  }
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -406,6 +412,11 @@ p,li {
     height: auto;
   }
 
+  #carousel-example-generic {
+    height: auto;
+    object-fit: cover;
+  }
+
 
 }
 
@@ -427,6 +438,12 @@ p,li {
   }
 
 
+  #carousel-example-generic {
+    height: auto;
+    object-fit: cover;
+  }
+
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -444,6 +461,10 @@ p,li {
     height: 64px;
   }
 
+  #carousel-example-generic {
+    height: 182px;
+    object-fit: cover;
+  }
 
 }
 
