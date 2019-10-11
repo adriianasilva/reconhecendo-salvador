@@ -447,3 +447,107 @@ p,li {
 
 }
 
+
+/* regras específicas para as páginas secundárias */
+
+#sobre img {
+  object-fit: contain;
+  height: inherit;
+}
+
+#sobre p {
+  font-size: 85%;
+}
+
+#sobre div > img , #sobre div .carousel {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  border: 1px dashed deeppink;
+}
+
+#sobre div p {
+  
+}
+
+#sobre > div .carousel.esquerda {
+  margin-left:  0px;
+  margin-right: 50px; /* alinhar carousel com a foto da professora Karla */
+}
+
+#sobre > div .carousel.direita {
+  margin-right:  0px;
+  margin-left: 50px; /* alinhar carousel com o texto, né */
+}
+
+.carrousel .sem-margem {
+  margin: 0;
+}
+
+#sobre .carousel-inner img {
+  margin-left:  auto;
+  margin-right: auto;
+  margin-top:   auto;
+  margin-bottom:auto;
+  height: 85vh;
+  width: auto;
+  
+}
+
+#sobre .item img {
+  object-fit: cover; /* caso as imagens fiquem cortadas de forma esquisita
+                        mude para "contain" */
+
+  height: 50vh !important; /* isso é respeitado até com o dev tools em dock na parte de baixo da tela */
+  width: 100%;
+}
+
+/* pintar bolinhas do carousel */
+#sobre .carousel-indicators li {
+  background-color: lightpink; 
+}
+
+#sobre .carousel-indicators .active {
+  background-color: deeppink !important ;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  #sobre > div .carousel.esquerda {
+    margin-left:  0px;
+    margin-right: 0px; /* alinhar carousel com a foto da professora Karla */
+  }
+  
+  #sobre > div .carousel.direita {
+    margin-right: 0px;
+    margin-left:  0px; /* alinhar carousel com o texto, né */
+  }
+  
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  #container_figura1 > img {
+    width: 30vw;
+    position: relative;
+    left: -50%;
+    top: 50%;
+    transform: translate(50%,50%);
+    
+  }  
+}
+
+
+
+@media screen and (min-width: 993px) {
+  
+  #container_figura1 > img {
+    width: auto;
+    height: 70vh;
+    object-fit: contain;
+    transform: translate(-13%,-7%);
+    
+  }
+}
+
