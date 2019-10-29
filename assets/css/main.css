@@ -313,6 +313,9 @@ p,li {
 
 /* configuração geral através de media queries - usar a largura de tela como referência */
 
+#vertical{
+  transform: rotate(90deg); 
+}
 
 @media screen and (min-width: 128px) and (max-width: 400px){ /*(max-width: 400px){*/
 
