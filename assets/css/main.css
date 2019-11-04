@@ -375,11 +375,11 @@ p,li {
     width: 100%;
   }
 
-  #carousel-example-generic {
+  #carousel-example-generic { /* melhorar respostividade da navbar em 04nov2019*/
     height: auto;
     object-fit: cover;
   }
-
+ 
 
 }
 
@@ -464,9 +464,22 @@ p,li {
     height: 64px;
   }
 
-  #carousel-example-generic {
-    height: 182px;
-    object-fit: cover;
+  #carousel-example-generic > * {
+    /* 
+      verificar corte na parte inferior das imagens e overflow entre elementos
+      existe uma razão entre altura e largura fixa para coisas acima da navbar amarela 
+    */
+
+    /*height: 256px;*/
+    height: 26vh; /* testei até encaixar as imagens */
+    object-fit: contain;
+    /* talvez precise de margin top e bottom pra centralizar os itens verticalmente dentro */
+    
+  }
+
+  #carousel-example-generic .carousel-inner .item {
+    vertical-align: middle;
+    align-items: center;
   }
 
 }
@@ -534,6 +547,73 @@ p,li {
   background-color: deeppink !important ;
 }
 
+
+/* reutilizando regras de sobre.html para redesenhando.html pedem ajustes */ 
+
+#redesenhando img {
+  object-fit: contain;
+  height: inherit;
+}
+
+#redesenhando p {
+  font-size: 85%;
+}
+
+#redesenhando div > img , #redesenhando div .carousel {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  border: 1px dashed deeppink;
+}
+
+#redesenhando div p {
+  
+}
+
+#redesenhando > div .carousel.esquerda {
+  margin-left:  0px;
+  margin-right: 50px; /* alinhar carousel com a foto da professora Karla */
+}
+
+#redesenhando > div .carousel.direita {
+  margin-right:  0px;
+  margin-left: 50px; /* alinhar carousel com o texto, né */
+}
+
+.carrousel .sem-margem {
+  margin: 0;
+}
+
+#redesenhando .carousel-inner img {
+  margin-left:  auto;
+  margin-right: auto;
+  margin-top:   auto;
+  margin-bottom:auto;
+  height: 85vh;
+  width: auto;
+  
+}
+
+#redesenhando .item img {
+  object-fit: contain; /* caso as imagens fiquem cortadas de forma esquisita
+                        mude para "contain" */
+
+  height: 50vh !important; /* isso é respeitado até com o dev tools em dock na parte de baixo da tela */
+  width: 100%;
+}
+
+/* pintar bolinhas do carousel */
+#redesenhando .carousel-indicators li {
+  background-color: lightpink; 
+}
+
+#redesenhando .carousel-indicators .active {
+  background-color: deeppink !important ;
+}
+
+
+
+
+/* regras de dimensionamento para sobre.html - incluir para outras páginas aqui */
 
 @media screen and (max-width: 767px) {
 
