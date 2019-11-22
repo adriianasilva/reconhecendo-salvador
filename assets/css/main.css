@@ -127,6 +127,12 @@ body {
   height: 320px;
 }
 
+.vazio160 {
+  height: 160px;
+  background-color: none;
+  z-index: 10;
+}
+
 .carousel-inner img { 
   max-width: 100%;
   max-height: 200%;
@@ -610,6 +616,72 @@ p,li {
   background-color: deeppink !important ;
 }
 
+
+/* reutilizar regras de sobre.html para projetos_ciencias.html pedem ajustes */ 
+
+#projetos_ciencias img {
+  object-fit: contain;
+  height: inherit;
+}
+
+#projetos_ciencias p {
+  font-size: 85%;
+}
+
+#projetos_ciencias div > img , #projetos_ciencias div .carousel {
+  margin-top: 64px;
+  margin-bottom: 64px;
+  border: 1px dashed deeppink;
+}
+
+#projetos_ciencias div p {
+  
+}
+
+#projetos_ciencias > div .carousel.esquerda {
+  margin-left:  0px;
+  margin-right: 50px;
+  margin-top:   50px;
+  margin-bottom:auto;
+}
+
+#projetos_ciencias > div .carousel.direita {
+  margin-right: 0px;
+  margin-left:  50px;
+  margin-top:   50px;
+  margin-bottom:auto;
+}
+
+.carrousel .sem-margem {
+  margin: 0;
+}
+
+#projetos_ciencias .carousel-inner img {
+  margin-left:  auto;
+  margin-right: auto;
+  margin-top:   auto;
+  margin-bottom:auto;
+  height: 85vh;
+  width: auto;
+  
+}
+
+#projetos_ciencias .item img {
+  object-fit: contain; /* caso as imagens fiquem cortadas de forma esquisita
+                        mude para "contain" */
+
+  height: 50vh !important; /* isso é respeitado até com o dev tools em dock na parte de baixo da tela */
+  width: 100%;
+}
+
+/* pintar bolinhas do carousel */
+#projetos_ciencias .carousel-indicators li {
+  background-color: lightpink; 
+}
+
+#projetos_ciencias .carousel-indicators .active {
+  background-color: deeppink !important ;
+}
 
 
 
